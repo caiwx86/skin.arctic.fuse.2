@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fonts>
+    <fontset id="Default" unicode="true">
+        <include content="Font_Default_Inter">
+            <param name="font_bold">resource://resource.font.robotocjksc/Inter-Unicode-Bold.ttf</param>
+            <param name="font_regular">resource://resource.font.robotocjksc/Inter-Unicode-Regular.ttf</param>
+            <param name="font_light">resource://resource.font.robotocjksc/Inter-Unicode-Regular.ttf</param>
+            <param name="style_light">light</param>
+            <param name="plot_linespacing_head">1.03</param>
+            <param name="plot_linespacing_midi">1.485</param>
+            <param name="plot_linespacing_main">1.13</param>
+            <param name="plot_linespacing_mini">1.20</param>
+            <param name="plot_linespacing_tiny">1.11</param>
+        </include>
+        <font>
+            <name>font23_narrow</name>
+            <filename>Noto-Regular.ttf</filename>
+            <size>21</size>
+        </font>
+        <font>
+            <name>font32</name>
+            <filename>Noto-Bold.ttf</filename>
+            <size>32</size>
+        </font>
+    </fontset>
+    <fontset id="Default (Non-Unicode)" unicode="false">
+        <include>Font_Default_Inter</include>
+        <font>
+            <name>font23_narrow</name>
+            <filename>Noto-Regular.ttf</filename>
+            <size>21</size>
+        </font>
+        <font>
+            <name>font32</name>
+            <filename>Noto-Bold.ttf</filename>
+            <size>32</size>
+        </font>
+        <font>
+            <name>font23_narrow</name>
+            <filename>inter-r.ttf</filename>
+            <size>21</size>
+        </font>
+        <font>
+            <name>font32</name>
+            <filename>inter-b.ttf</filename>
+            <size>32</size>
+        </font>
+        <font>
+            <name>font23_icon</name>
+            <filename>fa-r-unicode.ttf</filename>
+            <size>24</size>
+        </font>
+    </fontset>
+    <fontset id="Condensed (Classic)" unicode="false">
+        <include>Font_Default</include>
+        <font>
+            <name>font23_narrow</name>
+            <filename>Noto-Regular.ttf</filename>
+            <size>21</size>
+        </font>
+        <font>
+            <name>font32</name>
+            <filename>Noto-Bold.ttf</filename>
+            <size>32</size>
+        </font>
+    </fontset>
+    <fontset id="Figtree (Experimental)" unicode="false">
+        <include content="Font_Default">
+            <param name="font_bold">Figtree-Bold.ttf</param>
+            <param name="font_regular">Figtree-Regular.ttf</param>
+            <param name="font_light">Figtree-Light.ttf</param>
+            <param name="plot_linespacing_head">1.114</param>
+            <param name="plot_linespacing_midi">1.425</param>
+            <param name="plot_linespacing_main">1.102</param>
+            <param name="plot_linespacing_mini">1.202</param>
+            <param name="plot_linespacing_tiny">1.061</param>
+        </include>
+        <font>
+            <name>font23_narrow</name>
+            <filename>Noto-Regular.ttf</filename>
+            <size>21</size>
+        </font>
+        <font>
+            <name>font32</name>
+            <filename>Noto-Bold.ttf</filename>
+            <size>32</size>
+        </font>
+    </fontset>
+    <fontset id="Outfit (Experimental)" unicode="false">
+        <include content="Font_Default">
+            <param name="font_bold">Outfit-Bold.ttf</param>
+            <param name="font_regular">Outfit-Regular.ttf</param>
+            <param name="font_light">Outfit-Light.ttf</param>
+            <param name="plot_linespacing_head">1.00</param>
+            <param name="plot_linespacing_midi">1.356</param>
+            <param name="plot_linespacing_main">1.045</param>
+            <param name="plot_linespacing_mini">1.128</param>
+            <param name="plot_linespacing_tiny">1.025</param>
+        </include>
+        <font>
+            <name>font23_narrow</name>
+            <filename>Noto-Regular.ttf</filename>
+            <size>21</size>
+        </font>
+        <font>
+            <name>font32</name>
+            <filename>Noto-Bold.ttf</filename>
+            <size>32</size>
+        </font>
+    </fontset>
+    <fontset id="Heebo (Hebrew)" unicode="false">
+        <include content="Font_Default">
+            <param name="font_bold">Heebo-Bold.ttf</param>
+            <param name="font_regular">Heebo-Regular.ttf</param>
+            <param name="font_light">Heebo-Light.ttf</param>
+            <param name="size_heavy_hint">15</param>
+            <param name="size_light_hint">15</param>
+            <param name="size_heavy_tiny">21</param>
+            <param name="size_light_tiny">21</param>
+            <param name="size_heavy_mini">24</param>
+            <param name="size_light_mini">24</param>
+            <param name="size_heavy_main">27</param>
+            <param name="size_light_main">27</param>
+            <param name="size_heavy_main_x2">46</param>
+            <param name="size_light_main_x2">54</param>
+            <param name="size_heavy_midi">31</param>
+            <param name="size_light_midi">31</param>
+            <param name="size_heavy_midi_x2">62</param>
+            <param name="size_light_midi_x2">62</param>
+            <param name="size_heavy_head">37</param>
+            <param name="size_light_head">37</param>
+            <param name="size_heavy_huge">42</param>
+            <param name="size_light_huge">42</param>
+            <param name="size_heavy_huge_x2">84</param>
+            <param name="size_light_huge_x2">84</param>
+            <param name="plot_linespacing_head">1.028</param>
+            <param name="plot_linespacing_midi">1.268</param>
+            <param name="plot_linespacing_main">0.992</param>
+            <param name="plot_linespacing_mini">1.04</param>
+            <param name="plot_linespacing_tiny">0.957</param>
+        </include>
+        <font>
+            <name>font23_narrow</name>
+            <filename>Noto-Regular.ttf</filename>
+            <size>21</size>
+        </font>
+        <font>
+            <name>font32</name>
+            <filename>Noto-Bold.ttf</filename>
+            <size>32</size>
+        </font>
+    </fontset>
+</fonts>
