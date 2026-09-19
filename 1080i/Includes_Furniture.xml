@@ -565,6 +565,24 @@
                     <texture colordiffuse="main_fg_100">$VAR[Image_HDRCodec]</texture>
                     <visible>String.Contains(ListItem.FileNameAndPath,HDR) | !String.IsEmpty(Listitem.HdrType)</visible>
                 </control>
+                <control type="image">
+                    <fadetime>100</fadetime>
+                    <centertop>50%</centertop>
+                    <width>85</width>
+                    <height>58</height>
+                    <aspectratio align="left">keep</aspectratio>
+                    <texture colordiffuse="main_fg_100">$VAR[Image_DolbyPCodec]</texture>
+                    <visible>String.IsEqual(ListItem.DvProfile,7.6 FEL) | String.IsEqual(ListItem.DvProfile,7.6 MEL)</visible>
+                </control>
+                <control type="image">
+                    <fadetime>100</fadetime>
+                    <centertop>50%</centertop>
+                    <width>43</width>
+                    <height>58</height>
+                    <aspectratio align="left">keep</aspectratio>
+                    <texture colordiffuse="main_fg_100">$VAR[Image_DolbyP1Codec]</texture>
+                    <visible>String.Contains(ListItem.DvProfile,10) | String.Contains(ListItem.DvProfile,4) | String.Contains(ListItem.DvProfile,8) | String.Contains(ListItem.DvProfile,5)</visible>
+                </control>
                 <control type="image" id="77881">
                     <fadetime>100</fadetime>
                     <centertop>50%</centertop>

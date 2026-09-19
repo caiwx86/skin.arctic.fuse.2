@@ -49,6 +49,7 @@
                         <include content="Settings_Button">
                             <param name="id">8491</param>
                             <param name="control">button</param>
+                            <visible>!String.IsEqual(Player.Process(video.source.hdr.type.raw),5)</visible>
                             <visible>[String.Contains(Player.Process(video.hdr.type),SDR) | String.Contains(Player.Process(video.hdr.type),HLG)]</visible>
 			                <visible>Player.Process(videohwdecoder)</visible>
                             <selected>Integer.IsEqual(Player.Process(amlogic.vs10.mode.raw),2)</selected>
@@ -78,6 +79,7 @@
                         <include content="Settings_Button">
                             <param name="id">8492</param>
                             <param name="control">button</param>
+                            <visible>!String.IsEqual(Player.Process(video.source.hdr.type.raw),5)</visible>
 			                <visible>!Integer.IsEqual(System.GetInt(coreelec.amlogic.dolbyvision.mode),2) + ![String.IsEqual(Player.Process(video.source.hdr.type.raw),2) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass)]</visible>
 			                <visible>Player.Process(videohwdecoder)</visible>
                             <selected>Integer.IsEqual(Player.Process(amlogic.vs10.mode.raw),3)</selected>
@@ -107,6 +109,7 @@
                         <include content="Settings_Button">
                             <param name="id">8490</param>
                             <param name="control">button</param>
+			                <visible>!String.IsEqual(Player.Process(video.source.hdr.type.raw),5)</visible>
                             <visible>String.Contains(Player.Process(video.hdr.type),SDR) | String.Contains(Player.Process(video.hdr.type),HDR)</visible>
 			                <visible>!Integer.IsEqual(System.GetInt(coreelec.amlogic.dolbyvision.mode),2)</visible>
 			                <visible>!String.IsEqual(Player.Process(video.source.hdr.type.raw),2)</visible>

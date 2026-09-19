@@ -851,7 +851,8 @@
 
     <variable name="Image_VideoPlayer_HDRCodec">
         <value condition="String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision)">flags/colorful/other/dolbyvision.png</value>
-        <value condition="String.Contains(Player.Filenameandpath,.hdrplus.) | String.Contains(Player.Filenameandpath,.12bit.) | String.Contains(Player.Filenameandpath,.hdr10plus.) | String.Contains(Player.Filenameandpath,_hdr10plus_) | String.Contains(Player.Filenameandpath,_hdr10plus-)">flags/colorful/other/hdr10plus.png</value>
+        <value condition="String.IsEqual(Player.Process(video.source.hdr.type.raw),2)">flags/colorful/other/hdr10plus.png</value>
+        <value condition="String.IsEqual(Player.Process(video.source.hdr.type.raw),5)">flags/colorful/other/hdrvivid.png</value>
         <value condition="[String.IsEqual(VideoPlayer.VideoCodec,av1) + String.Contains(VideoPlayer.HdrType,hdr10)] | String.Contains(Player.Process(amlogic.vs10.mode),HDR10) | [String.IsEqual(Player.Process(video.source.hdr.type.raw),3) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass) + ![String.IsEqual(Player.Process(video.source.additional.hdr.type.raw),2) + Integer.IsEqual(System.GetInt(coreelec.amlogic.dolbyvision.mode),2)]] | !Integer.IsEqual(Player.Process(video.source.hdr.type.raw),1) + String.Contains(Player.Process(amlogic.vs10.mode),HDR10) | [String.IsEqual(Player.Process(video.source.hdr.type.raw),1) + !String.Contains(Player.Process(amlogic.vs10.mode),SDR)] | String.IsEqual(Player.Process(video.source.hdr.type.raw),1) + !String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision)">flags/colorful/other/hdr10.png</value>
         <value condition="[String.IsEqual(Player.Process(video.source.hdr.type.raw),4) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass)] | String.Contains(Player.Process(amlogic.eoft_gamut),HLG)">flags/colorful/other/hlg.png</value>
         <value condition="String.Contains(ListItem.FileNameAndPath,hdr) | [VideoPlayer.IsFullscreen + String.Contains(Player.FileNameAndPath,hdr)]">flags/colorful/other/other/HDR.png</value>
@@ -860,9 +861,35 @@
     <variable name="Image_HDRCodec">
         <value condition="String.IsEqual(ListItem.HdrType,dolbyvision)">flags/colorful/other/dolbyvision.png</value>
         <value condition="String.Contains(ListItem.FileNameAndPath,hdr10plus)">flags/colorful/other/hdr10plus.png</value>
+        <value condition="String.Contains(ListItem.FileNameAndPath,hdrvivid)">flags/colorful/other/hdrvivid.png</value>
         <value condition="String.IsEqual(ListItem.HdrType,hdr10)">flags/colorful/other/hdr10.png</value>
         <value condition="String.IsEqual(ListItem.HdrType,hlg)">flags/colorful/other/hlg.png</value>
         <value condition="String.Contains(ListItem.FileNameAndPath,hdr)">flags/colorful/other/HDR.png</value>
+    </variable>
+    
+    <variable name="Image_DolbyPCodec">
+        <value condition="String.IsEqual(ListItem.DvProfile,7.6 FEL)">flags/colorful/other/dolbyvisionf.png</value>
+        <value condition="String.IsEqual(ListItem.DvProfile,7.6 MEL)">flags/colorful/other/dolbyvisionm.png</value>
+        <value condition="String.IsEmpty(ListItem.DvProfile,)"></value>
+    </variable>
+    <variable name="Image_DolbyP1Codec">
+        <value condition="String.Contains(ListItem.DvProfile,4)">flags/colorful/other/dolbyvision4.png</value>
+       <value condition="String.Contains(ListItem.DvProfile,5)">flags/colorful/other/dolbyvision5.png</value>
+       <value condition="String.Contains(ListItem.DvProfile,8)">flags/colorful/other/dolbyvision8.png</value>
+       <value condition="String.Contains(ListItem.DvProfile,10)">flags/colorful/other/dolbyvision10.png</value>
+        <value condition="String.IsEmpty(ListItem.DvProfile,)"></value>
+    </variable>
+    <variable name="Image_Video_DolbyPCodec">
+        <value condition="String.Contains(Player.Process(video.dovi.el.type),full) + String.Contains(Player.Process(video.dovi.profile),7)">flags/colorful/other/dolbyvisionf.png</value>
+        <value condition="String.Contains(Player.Process(video.dovi.el.type),minimum) + String.Contains(Player.Process(video.dovi.profile),7)">flags/colorful/other/dolbyvisionm.png</value>
+        <value condition="String.IsEqual(Player.Process(video.dovi.el.type),none)"></value>
+    </variable>
+    <variable name="Image_Video_DolbyP1Codec">
+        <value condition="String.Contains(Player.Process(video.dovi.profile),4)">flags/colorful/other/dolbyvision4.png</value>
+       <value condition="String.Contains(Player.Process(video.dovi.profile),5)">flags/colorful/other/dolbyvision5.png</value>
+       <value condition="String.Contains(Player.Process(video.dovi.profile),8) | String.Contains(Player.Process(video.source.hdr.type),SDR) + String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision) | Integer.IsEqual(Player.Process(video.source.hdr.type.raw),1) + String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision)">flags/colorful/other/dolbyvision8.png</value>
+       <value condition="String.Contains(Player.Process(video.dovi.profile),10)">flags/colorful/other/dolbyvision10.png</value>
+        <value condition="String.IsEmpty(Player.Process(video.dovi.profile,)"></value>
     </variable>
 
     <variable name="Image_Weather">

@@ -70,7 +70,7 @@
               <control type="grouplist">
                 <top>20</top>
                 <orientation>horizontal</orientation>
-                <width>1000</width>
+                <width>1200</width>
                 <align>left</align>
                 <itemgap>15</itemgap>
                 <usecontrolcoords>true</usecontrolcoords>
@@ -90,7 +90,25 @@
                     <height>58</height>
                     <aspectratio align="left">keep</aspectratio>
                     <texture colordiffuse="panel_fg_100">$VAR[Image_VideoPlayer_HDRCodec]</texture>
-                    <visible>!String.IsEmpty(Control.GetLabel(78880))</visible>
+                    <visible>!String.IsEmpty(Control.GetLabel(78880)) + !String.Contains(Player.Process(amlogic.vs10.mode),SDR)</visible>
+                </control>
+                <control type="image">
+                    <fadetime>100</fadetime>
+                    <centertop>50%</centertop>
+                    <width>85</width>
+                    <height>58</height>
+                    <aspectratio align="left">keep</aspectratio>
+                    <texture colordiffuse="panel_fg_100">$VAR[Image_Video_DolbyPCodec]</texture>
+                    <visible>String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision) + [String.Contains(Player.Process(video.dovi.profile),7) + String.Contains(Player.Process(video.dovi.el.type),full) | String.Contains(Player.Process(video.dovi.profile),7) + String.Contains(Player.Process(video.dovi.el.type),minimum)]</visible>
+                </control>
+                <control type="image">
+                    <fadetime>100</fadetime>
+                    <centertop>50%</centertop>
+                    <width>43</width>
+                    <height>58</height>
+                    <aspectratio align="left">keep</aspectratio>
+                    <texture colordiffuse="panel_fg_100">$VAR[Image_Video_DolbyP1Codec]</texture>
+                    <visible>String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision) + !String.Contains(Player.Process(video.dovi.profile),7)</visible>
                 </control>
                 <control type="image" id="78881">
                     <fadetime>100</fadetime>

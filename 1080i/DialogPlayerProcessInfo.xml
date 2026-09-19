@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+    <defaultcontrol always="true">9998</defaultcontrol>
 	<include content="Animation_SlideIn_Dialog">
 		<param name="posy">96</param>
 		<param name="windowopen_delay">100</param>
@@ -54,7 +55,7 @@
 				<animation type="WindowOpen">
 					<effect type="fade" start="0" end="100" delay="0" time="480"/>
 				</animation>
-				<visible>String.IsEqual(Player.Process(video.source.hdr.type.raw),0) | String.IsEqual(Player.Process(video.source.hdr.type.raw),4) | String.IsEqual(Player.Process(video.source.hdr.type.raw),1) | [String.IsEqual(VideoPlayer.VideoCodec,av1) + String.Contains(VideoPlayer.HdrType,dolbyvision)] + !String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision) | [String.Contains(Player.Process(video.hdr.type),dolby vision) + String.IsEmpty(Player.Process(video.source.dovi.meta.version))]</visible>
+				<visible>![String.Contains(Player.Process(video.hdr.type),dolby vision) + !String.IsEmpty(Player.Process(video.source.dovi.meta.version))]</visible>
 				<control type="grouplist">
 					<right>120</right>
 					<top>210</top>
@@ -1080,5 +1081,27 @@
 				</control>
 			</control>
 		</control>
+<control type="button" id="9998">
+    <left>0</left>
+    <top>0</top>
+    <width>1920</width>
+    <height>1080</height>
+    
+    <texturefocus></texturefocus>
+    <texturenofocus></texturenofocus>
+    <label></label>
+    
+    <onclick>Dialog.Close(playerprocessinfo)</onclick>
+    <onclick>runaddon(script.tinyppi)</onclick>
+    
+    <!-- Down button -->
+    <ondown>Dialog.Close(playerprocessinfo)</ondown>
+    <ondown>Action(Back);ActivateWindow(fullscreenvideo)</ondown>
+
+    <!-- Other tilt-->
+    <onleft>9998</onleft>
+    <onright>9998</onright>
+    <onup>9998</onup>
+</control>
 	</controls>
 </window>
