@@ -1907,6 +1907,13 @@
         <value condition="Skin.HasSetting(osd.10CodecStartupLogos)">$LOCALIZE[32072]</value>
         <value>$LOCALIZE[591]</value>
     </variable>
+    
+    <variable name="OSDCodecLogosStartupLabel2">
+        <value condition="Skin.HasSetting(osd.25CodecStartupLogos)">$LOCALIZE[32070]</value>
+        <value condition="Skin.HasSetting(osd.27CodecStartupLogos)">$LOCALIZE[32071]</value>
+        <value condition="Skin.HasSetting(osd.210CodecStartupLogos)">$LOCALIZE[32072]</value>
+        <value>$LOCALIZE[591]</value>
+    </variable>
 
     <variable name="OSDCodecLogosStartupLabel1">
         <value condition="Skin.HasSetting(osd.15CodecStartupLogos)">$LOCALIZE[32070]</value>

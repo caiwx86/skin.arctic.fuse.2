@@ -3241,3 +3241,11 @@ msgstr "Hangkimenet"
 msgctxt "#32092"
 msgid "Playtime"
 msgstr "Lejátszási idő"
+
+msgctxt "#32093"
+msgid "Center theater splash at movie begin, or when audio changes during movie play"
+msgstr "Mozi splash mutatása középen lejátszás indításkor, vagy ha hangváltás történik"
+
+msgctxt "#32094"
+msgid "Show theater splash when play begin or when audio changes"
+msgstr "Mozi splash mutatása középen indításkor és hangváltásnál"

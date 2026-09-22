@@ -860,7 +860,7 @@
 
     <variable name="Image_HDRCodec">
         <value condition="String.IsEqual(ListItem.HdrType,dolbyvision)">flags/colorful/other/dolbyvision.png</value>
-        <value condition="String.Contains(ListItem.FileNameAndPath,hdr10plus)">flags/colorful/other/hdr10plus.png</value>
+        <value condition="String.Contains(ListItem.FileNameAndPath,hdr10plus) | String.IsEqual(ListItem.HdrType,hdr10plus)">flags/colorful/other/hdr10plus.png</value>
         <value condition="String.Contains(ListItem.FileNameAndPath,hdrvivid)">flags/colorful/other/hdrvivid.png</value>
         <value condition="String.IsEqual(ListItem.HdrType,hdr10)">flags/colorful/other/hdr10.png</value>
         <value condition="String.IsEqual(ListItem.HdrType,hlg)">flags/colorful/other/hlg.png</value>

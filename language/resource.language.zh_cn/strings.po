@@ -3246,3 +3246,11 @@ msgstr "声音输出"
 msgctxt "#32092"
 msgid "Playtime"
 msgstr "播放时间"
+
+msgctxt "#32093"
+msgid "Center theater splash at movie begin, or when audio changes during movie play"
+msgstr "电影开始时，或播放电影期间音频发生变化时，居中显示影院开场画面"
+
+msgctxt "#32094"
+msgid "Show theater splash when play begin or when audio changes"
+msgstr "播放开始或音频发生变化时，显示影院开场画面"

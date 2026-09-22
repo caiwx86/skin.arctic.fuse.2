@@ -362,13 +362,33 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float) | String.IsEqual(VideoPlayer.AudioCodec,mp2) | String.IsEqual(VideoPlayer.AudioCodec,mp1)</visible>
+					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float)</visible>
 					<top>163</top>
 					<left>66</left>
 					<control type="image">
 						<width>150</width>
 						<height>56</height>
-						<texture colordiffuse="FFf0e8c4">codecs/MP3.png</texture>
+						<texture colordiffuse="FFf0e8c4">codecs/mp3.png</texture>
+					</control>
+				</control>
+				<control type="group">
+					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp2)</visible>
+					<top>163</top>
+					<left>66</left>
+					<control type="image">
+						<width>150</width>
+						<height>56</height>
+						<texture colordiffuse="FFf0e8c4">codecs/mp2.png</texture>
+					</control>
+				</control>
+				<control type="group">
+					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp1)</visible>
+					<top>163</top>
+					<left>66</left>
+					<control type="image">
+						<width>150</width>
+						<height>56</height>
+						<texture colordiffuse="FFf0e8c4">codecs/mp1.png</texture>
 					</control>
 				</control>
 				<control type="group">
@@ -931,13 +951,33 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float) | String.IsEqual(VideoPlayer.AudioCodec,mp2) | String.IsEqual(VideoPlayer.AudioCodec,mp1)</visible>
+					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float)</visible>
 					<top>163</top>
 					<left>66</left>
 					<control type="image">
 						<width>150</width>
 						<height>56</height>
-						<texture colordiffuse="FFf0e8c4">codecs/MP3.png</texture>
+						<texture colordiffuse="FFf0e8c4">codecs/mp3.png</texture>
+					</control>
+				</control>
+				<control type="group">
+					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp2)</visible>
+					<top>163</top>
+					<left>66</left>
+					<control type="image">
+						<width>150</width>
+						<height>56</height>
+						<texture colordiffuse="FFf0e8c4">codecs/mp2.png</texture>
+					</control>
+				</control>
+				<control type="group">
+					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp1)</visible>
+					<top>163</top>
+					<left>66</left>
+					<control type="image">
+						<width>150</width>
+						<height>56</height>
+						<texture colordiffuse="FFf0e8c4">codecs/mp1.png</texture>
 					</control>
 				</control>
 				<control type="group">
@@ -1492,13 +1532,33 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float) | String.IsEqual(VideoPlayer.AudioCodec,mp2) | String.IsEqual(VideoPlayer.AudioCodec,mp1)</visible>
+					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float)</visible>
 					<top>163</top>
 					<left>90</left>
 					<control type="image">
 						<width>150</width>
 						<height>56</height>
-						<texture colordiffuse="FFf0e8c4">codecs/MP3.png</texture>
+						<texture colordiffuse="FFf0e8c4">codecs/mp3.png</texture>
+					</control>
+				</control>
+				<control type="group">
+					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp2)</visible>
+					<top>163</top>
+					<left>90</left>
+					<control type="image">
+						<width>150</width>
+						<height>56</height>
+						<texture colordiffuse="FFf0e8c4">codecs/mp2.png</texture>
+					</control>
+				</control>
+				<control type="group">
+					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp1)</visible>
+					<top>163</top>
+					<left>90</left>
+					<control type="image">
+						<width>150</width>
+						<height>56</height>
+						<texture colordiffuse="FFf0e8c4">codecs/mp1.png</texture>
 					</control>
 				</control>
 				<control type="group">
@@ -2057,16 +2117,36 @@
 					<texture colordiffuse="FFf0e8c4">codecs/Dolby_Atmos.png</texture>
 				</control>
 			</control>
-			<control type="group">
-				<visible>String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float) | String.IsEqual(VideoPlayer.AudioCodec,mp2) | String.IsEqual(VideoPlayer.AudioCodec,mp1)</visible>
-				<top>163</top>
-				<left>90</left>
-				<control type="image">
-					<width>150</width>
-					<height>56</height>
-					<texture colordiffuse="FFf0e8c4">codecs/MP3.png</texture>
+				<control type="group">
+					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float)</visible>
+					<top>163</top>
+					<left>90</left>
+					<control type="image">
+						<width>150</width>
+						<height>56</height>
+						<texture colordiffuse="FFf0e8c4">codecs/mp3.png</texture>
+					</control>
 				</control>
-			</control>
+				<control type="group">
+					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp2)</visible>
+					<top>163</top>
+					<left>90</left>
+					<control type="image">
+						<width>150</width>
+						<height>56</height>
+						<texture colordiffuse="FFf0e8c4">codecs/mp2.png</texture>
+					</control>
+				</control>
+				<control type="group">
+					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp1)</visible>
+					<top>163</top>
+					<left>90</left>
+					<control type="image">
+						<width>150</width>
+						<height>56</height>
+						<texture colordiffuse="FFf0e8c4">codecs/mp1.png</texture>
+					</control>
+				</control>
 			<control type="group">
 				<visible>String.IsEqual(VideoPlayer.AudioCodec,dca) | String.IsEqual(VideoPlayer.AudioCodec,dts) | String.IsEqual(VideoPlayer.AudioCodec,dts_es)</visible>
 				<top>163</top>
@@ -2617,13 +2697,33 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float) | String.IsEqual(VideoPlayer.AudioCodec,mp2) | String.IsEqual(VideoPlayer.AudioCodec,mp1)</visible>
+					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float)</visible>
 					<top>163</top>
 					<left>90</left>
 					<control type="image">
 						<width>150</width>
 						<height>56</height>
-						<texture colordiffuse="FFf0e8c4">codecs/MP3.png</texture>
+						<texture colordiffuse="FFf0e8c4">codecs/mp3.png</texture>
+					</control>
+				</control>
+				<control type="group">
+					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp2)</visible>
+					<top>163</top>
+					<left>90</left>
+					<control type="image">
+						<width>150</width>
+						<height>56</height>
+						<texture colordiffuse="FFf0e8c4">codecs/mp2.png</texture>
+					</control>
+				</control>
+				<control type="group">
+					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp1)</visible>
+					<top>163</top>
+					<left>90</left>
+					<control type="image">
+						<width>150</width>
+						<height>56</height>
+						<texture colordiffuse="FFf0e8c4">codecs/mp1.png</texture>
 					</control>
 				</control>
 				<control type="group">
@@ -3182,16 +3282,36 @@
 					<texture colordiffuse="FFf0e8c4">codecs/Dolby_Atmos.png</texture>
 				</control>
 			</control>
-			<control type="group">
-				<visible>String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float) | String.IsEqual(VideoPlayer.AudioCodec,mp2) | String.IsEqual(VideoPlayer.AudioCodec,mp1)</visible>
-				<top>163</top>
-				<left>90</left>
-				<control type="image">
-					<width>150</width>
-					<height>56</height>
-					<texture colordiffuse="FFf0e8c4">codecs/MP3.png</texture>
+				<control type="group">
+					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float)</visible>
+					<top>163</top>
+					<left>90</left>
+					<control type="image">
+						<width>150</width>
+						<height>56</height>
+						<texture colordiffuse="FFf0e8c4">codecs/mp3.png</texture>
+					</control>
 				</control>
-			</control>
+				<control type="group">
+					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp2)</visible>
+					<top>163</top>
+					<left>90</left>
+					<control type="image">
+						<width>150</width>
+						<height>56</height>
+						<texture colordiffuse="FFf0e8c4">codecs/mp2.png</texture>
+					</control>
+				</control>
+				<control type="group">
+					<visible>String.IsEqual(VideoPlayer.AudioCodec,mp1)</visible>
+					<top>163</top>
+					<left>90</left>
+					<control type="image">
+						<width>150</width>
+						<height>56</height>
+						<texture colordiffuse="FFf0e8c4">codecs/mp1.png</texture>
+					</control>
+				</control>
 			<control type="group">
 				<visible>String.IsEqual(VideoPlayer.AudioCodec,dca) | String.IsEqual(VideoPlayer.AudioCodec,dts) | String.IsEqual(VideoPlayer.AudioCodec,dts_es)</visible>
 				<top>163</top>
@@ -3440,6 +3560,24 @@
 					<bottom>846</bottom>
 					<height>91</height>
 					<width>200</width>
+					<visible>$PARAM[visible]</visible>
+					<texture>$PARAM[texture]</texture>
+				</control>
+			</control>
+		</definition>
+	</include>
+	
+	<include name="SplashCenter">
+		<param name="groupId"/>
+		<param name="imageId"/>
+		<param name="visible"/>
+		<param name="texture"/>
+		<definition>
+			<control type="group" id="$PARAM[groupId]">
+				<control type="image" id="$PARAM[imageId]">
+					<bottom>320</bottom>
+					<height>533</height>
+					<width>1000</width>
 					<visible>$PARAM[visible]</visible>
 					<texture>$PARAM[texture]</texture>
 				</control>

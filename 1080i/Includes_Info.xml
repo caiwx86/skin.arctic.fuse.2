@@ -1565,7 +1565,7 @@
                 <param name="visible">$PARAM[visible]</param>
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
                 <param name="is_dolbyvision">[String.IsEqual($PARAM[listitem_hdrtype],dolbyvision)]</param>
-                <param name="is_hdr10plus">[String.IsEqual($PARAM[listitem_hdrtype],hdr10)] + [String.Contains(ListItem.Filenameandpath,.hdrplus.) | String.Contains(ListItem.Filenameandpath,.12bit.) | String.Contains(ListItem.Filenameandpath,.hdr10plus.) | String.Contains(ListItem.Filenameandpath,_hdr10plus_) | String.Contains(ListItem.Filenameandpath,-hdr10plus-)]</param>
+                <param name="is_hdr10plus">[String.IsEqual($PARAM[listitem_hdrtype],hdr10plus)] | [String.IsEqual($PARAM[listitem_hdrtype],hdr10)] + [String.Contains(ListItem.Filenameandpath,.hdrplus.) | String.Contains(ListItem.Filenameandpath,.12bit.) | String.Contains(ListItem.Filenameandpath,.hdr10plus.) | String.Contains(ListItem.Filenameandpath,_hdr10plus_) | String.Contains(ListItem.Filenameandpath,-hdr10plus-)]</param>
                 <param name="is_hdr">[String.IsEqual($PARAM[listitem_hdrtype],hdr10)] + ![String.Contains(ListItem.Filenameandpath,.hdrplus.) | String.Contains(ListItem.Filenameandpath,.12bit.) | String.Contains(ListItem.Filenameandpath,.hdr10plus.) | String.Contains(ListItem.Filenameandpath,_hdr10plus_) | String.Contains(ListItem.Filenameandpath,-hdr10plus-)]</param>
                 <param name="is_hlg">[String.IsEqual($PARAM[listitem_hdrtype],hlg)]</param>
             </include>

@@ -28,6 +28,71 @@
 				<font>font_mini</font>
 			</include>
 		</control>
+
+		<control type="group" id="8">
+			<depth>DepthOSD+</depth>
+			<visible>Skin.HasSetting(osd.25CodecStartupLogos)</visible>
+			<visible>String.IsEqual(Player.Process(av.change),1)</visible>
+			<top>0</top>
+			<left>490</left>
+			<animation type="Hidden">
+				<effect type="fade" start="100" end="0" delay="3000" time="500" tween="sine" />
+			</animation>
+			<!-- Big splash-->
+			<include content="SplashCenter">
+				<param name="groupId">40</param>
+				<param name="imageId">41</param>
+				<param name="texture">bh2.png</param>
+			</include>
+			<include content="SplashCenter">
+				<param name="groupId">40</param>
+				<param name="imageId">41</param>
+				<param name="texture">h3.png</param>
+			</include>
+		</control>
+		<control type="group" id="81">
+			<depth>DepthOSD+</depth>
+			<visible>Skin.HasSetting(osd.27CodecStartupLogos)</visible>
+			<visible>String.IsEqual(Player.Process(av.change),1)</visible>
+			<top>0</top>
+			<left>490</left>
+			<animation type="Hidden">
+				<effect type="fade" start="100" end="0" delay="5000" time="500" tween="sine" />
+			</animation>
+			<!-- Big splash-->
+			<include content="SplashCenter">
+				<param name="groupId">40</param>
+				<param name="imageId">41</param>
+				<param name="texture">bh2.png</param>
+			</include>
+			<include content="SplashCenter">
+				<param name="groupId">40</param>
+				<param name="imageId">41</param>
+				<param name="texture">h3.png</param>
+			</include>
+		</control>
+		<control type="group" id="81">
+			<depth>DepthOSD+</depth>
+			<visible>Skin.HasSetting(osd.210CodecStartupLogos)</visible>
+			<visible>String.IsEqual(Player.Process(av.change),1)</visible>
+			<top>0</top>
+			<left>490</left>
+			<animation type="Hidden">
+				<effect type="fade" start="100" end="0" delay="8000" time="500" tween="sine" />
+			</animation>
+			<!-- Big splash-->
+			<include content="SplashCenter">
+				<param name="groupId">40</param>
+				<param name="imageId">41</param>
+				<param name="texture">bh2.png</param>
+			</include>
+			<include content="SplashCenter">
+				<param name="groupId">40</param>
+				<param name="imageId">41</param>
+				<param name="texture">h3.png</param>
+			</include>
+		</control>
+
 		<control type="group" id="2">
 			<depth>DepthOSD+</depth>
 			<visible>Skin.HasSetting(osd.5CodecStartupLogos) + String.IsEqual(VideoPlayer.VideoCodec,av1)</visible>

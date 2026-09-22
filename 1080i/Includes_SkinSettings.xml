@@ -909,6 +909,27 @@
 					<onclick>Skin.ToggleSetting(Skin.ToggleDebug)</onclick>
 					<onclick>Skin.ToggleDebug</onclick>
         </include>
+        <include content="Settings_Label" description="Big Splash">
+            <param name="window">skinsettings</param>
+            <param name="baseid">$PARAM[baseid]</param>
+            <param name="id">0016</param>
+            <label>$LOCALIZE[32093]</label>
+        </include>
+        <include content="Settings_Button">
+            <param name="dialog">false</param>
+            <param name="window">skinsettings</param>
+            <param name="baseid">$PARAM[baseid]</param>
+            <param name="id">0017</param>
+            <param name="control">button</param>
+            <label>$LOCALIZE[32094]</label>
+            <label2>$VAR[OSDCodecLogosStartupLabel2]</label2>
+            <onclick condition="!Skin.HasSetting(osd.25CodecStartupLogos) + !Skin.HasSetting(osd.27CodecStartupLogos) + !Skin.HasSetting(osd.210CodecStartupLogos)">Skin.ToggleSetting(osd.25CodecStartupLogos)</onclick>
+            <onclick condition="Skin.HasSetting(osd.25CodecStartupLogos)">Skin.ToggleSetting(osd.27CodecStartupLogos)</onclick>
+            <onclick condition="Skin.HasSetting(osd.27CodecStartupLogos)">Skin.ToggleSetting(osd.210CodecStartupLogos)</onclick>
+            <onclick condition="Skin.HasSetting(osd.25CodecStartupLogos)">Skin.Reset(osd.25CodecStartupLogos)</onclick>
+            <onclick condition="Skin.HasSetting(osd.210CodecStartupLogos)">Skin.Reset(osd.210CodecStartupLogos)</onclick>
+            <onclick condition="Skin.HasSetting(osd.27CodecStartupLogos)">Skin.Reset(osd.27CodecStartupLogos)</onclick>
+        </include>
         <include content="Settings_Label" description="Codec logos">
             <param name="window">skinsettings</param>
             <param name="baseid">$PARAM[baseid]</param>
