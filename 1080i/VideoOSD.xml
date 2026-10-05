@@ -26,7 +26,7 @@
                         <left>-10</left>
                         <orientation>horizontal</orientation>
                         <itemgap>osd_itemgap</itemgap>
-                        <onleft>6009</onleft>
+                        <onleft>6010</onleft>
                         <onright>6005</onright>
                         <ondown>ActivateWindow($VAR[Action_OSD_Main_OnDown])</ondown>
 
@@ -231,6 +231,21 @@
                             <param name="id">6009</param>
                             <param name="groupid">6109</param>
                             <param name="itemgap">osd_itemgap</param>
+                        </include>
+                        <!-- Button: Misaka 弹幕 -->
+                        <control type="button" id="6010">
+                            <include>Defs_OSD_Button</include>
+                            <label>$INFO[Window(Home).Property(misaka.count)]</label>
+                            <onup>8200</onup>
+                            <onclick>CancelAlarm(osd_timeout,true)</onclick>
+                            <onclick>RunScript(service.misaka.danmaku,panel)</onclick>
+                        </control>
+                        <include content="OSD_Button_Icon_Overlay">
+                            <param name="icon">special://home/addons/service.misaka.danmaku/resources/media/danmaku.png</param>
+                            <param name="id">6010</param>
+                            <param name="groupid">6110</param>
+                            <param name="itemgap">osd_itemgap</param>
+                            <param name="iconoffset_condition">!String.IsEmpty(Window(Home).Property(misaka.count))</param>
                         </include>
                     </control>
                 </control>
